@@ -3,6 +3,15 @@
 ## 프로그램 설명
 백엔드는 Flask를 이용한 Rest 서비스를 오픈하고, 프런트는 Vue & Vuetify를 이용해서 개발하는 예시코드이다.
 
+![screenshot](./documents/screenshot.png)
+
+flask는 다음의 2개 서비스를 열고 있다.
+- GET: /rest/get : 데이터를 프런트로 제공 함
+- SET: /rest/set : 프런트에서 변경된 row를 받아서 데이터를 업데이트 함
+
+UI는 3개의 Tab으로 구성되어 있으며 실질적으로 작동하는 Tab은 Table이고, 나머지는 더미 페이지이다.
+Table Tab이 오픈되면 서버로부터 데이터를 받아와서(/rest/get) 화면에 테이블을 그린다. 사용자가 테이블의 Cell을 클릭해서 내용을 변경하면 즉시 서버로 업데이트(/rest/set) 요청을 한다. 
+
 ## 필요 패키지
 Python 3 및 nodejs 를 이용해서 개발한 프로젝트로써 시작 전 개발환경에 설치가 필요하다.
 - python: https://www.python.org/
